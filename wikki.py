@@ -6,7 +6,7 @@ API_TOKEN = '7511889467:AAFnpgjF7NsqpL0ykE8sD1rau-ZVr0x_v2o'
 
 logging.basicConfig(level=logging.INFO)
 
-bot = Bot(token=API_TOKEN)
+bot = Bot(token=API_TOKEN, proxy='http//proxy.server:3128')
 dp = Dispatcher(bot)
 
 start_keyboards = types.ReplyKeyboardMarkup(keyboard=[
